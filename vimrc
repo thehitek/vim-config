@@ -1,3 +1,9 @@
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+        \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 set nocompatible
 set encoding=utf-8
 set number
@@ -19,7 +25,7 @@ filetype plugin indent on
 call plug#begin('~/.vim/plugged')
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'morhetz/gruvbox'
+Plug 'ghifarit53/tokyonight-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-commentary'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -28,7 +34,10 @@ Plug 'junegunn/fzf.vim'
 call plug#end()
 
 set background=dark
-colorscheme gruvbox
+let g:tokyonight_style = 'night'   " night | storm | moon | day
+let g:tokyonight_enable_italic = 1
+let g:tokyonight_transparent = 0
+colorscheme tokyonight
 
 let g:airline_powerline_fonts = 1
 
