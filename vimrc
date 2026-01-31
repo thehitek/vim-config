@@ -4,6 +4,9 @@ let mapleader = " "
 syntax on
 filetype plugin indent on
 
+set number
+set relativenumber
+
 set wrap
 set whichwrap+=<,>,h,l
 set whichwrap+=<,>,[,]
@@ -21,8 +24,28 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 
+set smartindent
+set autoindent
+
 set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+
 set wildmenu
+
+set backspace=indent,eol,start
+
+set scrolloff=5
+set sidescrolloff=5
+
+set splitbelow
+set splitright
+
+set undofile
+
+set hidden
+set confirm
 
 if has('multi_byte')
   nnoremap Ж :
