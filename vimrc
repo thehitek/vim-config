@@ -4,8 +4,8 @@ let mapleader = " "
 syntax on
 filetype plugin indent on
 
-set number
-set relativenumber
+set nonumber
+set norelativenumber
 
 set wrap
 set whichwrap+=<,>,h,l
