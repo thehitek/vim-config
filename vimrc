@@ -7,6 +7,8 @@ filetype plugin indent on
 set nonumber
 set norelativenumber
 
+set clipboard=unnamedplus
+
 set wrap
 set whichwrap+=<,>,h,l
 set whichwrap+=<,>,[,]
