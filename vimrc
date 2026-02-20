@@ -72,6 +72,8 @@ inoremap <S-Up>   <Esc><C-u>i
 inoremap <S-Right> <C-o>e
 inoremap <S-Left>  <C-o>b
 
+nnoremap <leader>e :Explore<CR>
+
 if has('terminal')
   tnoremap <Esc> <C-\><C-n>
 endif
