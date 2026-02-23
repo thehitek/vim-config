@@ -55,7 +55,6 @@ if has('multi_byte')
 endif
 
 nnoremap J mzJ`z
-xnoremap <leader>p "_dP
 
 nnoremap q <Nop>
 nnoremap <leader>q q
